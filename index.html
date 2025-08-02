@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
+    <title>My Site</title>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a style="color: yellow;" class="navbar-brand playwrite-au-qld-cursive" href="#">GolCom</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title playwrite-au-qld-cursive" id="offcanvasNavbarLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active playwrite-au-qld-cursive" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active playwrite-au-qld-cursive" aria-current="page" href="#">Flights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link playwrite-au-qld-cursive" href="#">Places</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle playwrite-au-qld-cursive" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Direction
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item playwrite-au-qld-cursive" href="#">To Where</a></li>
+              <li><a class="dropdown-item playwrite-au-qld-cursive" href="#">From Where</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item playwrite-au-qld-cursive" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-outline-warning" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card bg-warning">
+        <img src="download (1).jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Istanbul</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+        <button type="button" class="btn btn-outline-primary">Travel Now</button>
+      </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="background-color: aqua;">
+        <img src="download (2).jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dubai</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-cols-md-2 g-4 mt-3">
+    <div class="col">
+      <div class="card"  style="background-color: greenyellow;">
+        <img src="download (3).jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Rome</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="background-color: pink;">
+        <img src="download (4).jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Paris</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h4>About Us</h4>
+      <p>Fast and cheap journey</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/privacy">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="https://facebook.com" target="_blank">Facebook</a> |
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 GolCom. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

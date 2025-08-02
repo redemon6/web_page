@@ -1,0 +1,43 @@
+.container-fluid {
+    background-color: chocolate;
+}
+
+.playwrite-au-qld-cursive {
+    font-family: "Playwrite AU QLD", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+footer {
+  background-color: chocolate;
+  color: yellow;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 5px;
+}
+
+.footer-container h4 {
+  margin-bottom: 10px;
+}
+
+.footer-container a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+}
