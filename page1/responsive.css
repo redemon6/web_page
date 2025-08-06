@@ -1,0 +1,115 @@
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: rgb(255, 209, 2);
+        font-family: "Montserrat";
+        margin: 0;
+    }
+
+    .menu {
+        display: block;
+
+
+    }
+
+    #container {
+        display: none;
+        position: absolute;
+        top: 45px;
+        width: 100%;
+    }
+
+    #container p {
+        background-color: white;
+        padding: 5px;
+        margin: 0;
+        font: bold;
+        font-family: 'Montserrat';
+
+    }
+
+    #first {
+        display: flex;
+    }
+
+    .login button {
+        background-color: blue;
+        border-radius: 10px;
+        padding: 7px;
+        border: 0;
+        margin: 0;
+        color: white;
+
+
+    }
+
+    #element {
+        display: none;
+    }
+
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin-bottom: 0;
+        margin-top: 5px;
+
+    }
+
+    .texts {
+
+        border-radius: 20px;
+        background-color: white;
+        font: bold;
+        width: 60%;
+        float: left;
+        height: 600px;
+        padding: 5px;
+        font-family: "Montserrat";
+        font-size: 10px;
+        justify-content: left;
+        margin-left: 20px;
+    }
+
+
+    .context {
+        display: block;
+    }
+
+    .carusel {
+      
+        height: 600px;
+        display: grid;
+        float: left;
+        margin-bottom: 10px;
+        width: 20%;
+        gap: 20px;
+        padding:8px;
+        justify-content: left;
+        overflow: hidden;
+
+    }
+
+    .carusel-img {
+        width: 50px;
+        justify-content: center;
+        height: 50px;
+
+        transition: transform 0.3s ease,
+            box-shadow 0.3s ease;
+        border-radius: 10px;
+        cursor: pointer;
+
+
+
+    }
+
+    .carusel-img:hover {
+        transform: scale(1.2);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+
+    }
+
+
+
+}
