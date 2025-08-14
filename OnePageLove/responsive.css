@@ -1,0 +1,43 @@
+@media screen and (max-width : 500px) {
+    body {
+        width:100%
+    }
+    .esas h1 {
+        font-size: 20px;
+    }
+    img {
+        margin-bottom: 20px;
+    }
+    .container {
+        display: none;
+    }
+    .left h3 {
+        display: none;
+    }
+    /* .left span {
+        display: block;
+    } */
+    .main .esas{
+        /* width: 450px;        
+        display: flex;
+        float: left;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+        margin-left:-130px;
+        margin-right: 20px;
+        width: 450px;
+    }
+    .images {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+    .images p {
+        display:block;
+        margin: 0px;
+    }
+    
+
+}
