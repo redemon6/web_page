@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">ShopEase</div>
+        <input type="text" placeholder="Search for products..." />
+        <div class="basket-icon" id="basket-icon">
+            🛒 <span id="basket-count">0</span>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>Welcome to ShopEase!</h1>
+        <p>Find your next favorite gadget!</p>
+    </header>
+
+    <section class="product-grid">
+
+        <div class="product-card" data-name="Smart Watch" data-price="59.99">
+            <img src="/!/71HqlGY1rgL.jpg" alt="Smart Watch">
+            <p><strong>Smart Watch</strong></p>
+            <p>$59.99</p>
+            <button class="add-btn">Add to Basket</button>
+        </div>
+
+        <div class="product-card" data-name="Bluetooth Speaker" data-price="39.99">
+            <img src="/!/81wdmgabXFL.jpg" alt="Speaker">
+            <p><strong>Bluetooth Speaker</strong></p>
+            <p>$39.99</p>
+            <button class="add-btn">Add to Basket</button>
+        </div>
+
+        <div class="product-card" data-name="VR Headset" data-price="89.99">
+            <img src="/!/51pdPTbbjzL._UF1000,1000_QL80_.jpg" alt="VR Headset">
+            <p><strong>VR Headset</strong></p>
+            <p>$89.99</p>
+            <button class="add-btn">Add to Basket</button>
+        </div>
+
+        <div class="product-card" data-name="Tripod Stand" data-price="24.99">
+            <img src="/!/71dFiIFQ3GL._UF1000,1000_QL80_.jpg" alt="Tripod">
+            <p><strong>Tripod Stand</strong></p>
+            <p>$24.99</p>
+            <button class="add-btn">Add to Basket</button>
+        </div>
+
+        <div class="product-card" data-name="Wireless Earbuds" data-price="29.99">
+            <img src="/!/61Mn590rlnL.jpg" alt="Earbuds">
+            <p><strong>Wireless Earbuds</strong></p>
+            <p>$29.99</p>
+            <button class="add-btn">Add to Basket</button>
+        </div>
+
+        <div class="product-card" data-name="Fitness Tracker" data-price="49.99">
+            <img src="/!/fitness-tracker.webp" alt="Fitness Tracker">
+            <p><strong>Fitness Tracker</strong></p>
+            <p>$49.99</p>
+            <button class="add-btn">Add to Basket</button>
+        </div>
+
+        <div class="product-card" data-name="Gaming Mouse" data-price="25.99">
+            <img src="/!/61Mk3YqYHpL.jpg" alt="Gaming Mouse">
+            <p><strong>Gaming Mouse</strong></p>
+            <p>$25.99</p>
+            <button class="add-btn">Add to Basket</button>
+        </div>
+
+        <div class="product-card" data-name="LED Lamp" data-price="19.99">
+            <img src="/!/61wOrELntLL.jpg" alt="LED Lamp">
+            <p><strong>LED Lamp</strong></p>
+            <p>$19.99</p>
+            <button class="add-btn">Add to Basket</button>
+        </div>
+
+        <div class="product-card" data-name="Phone Stand" data-price="12.99">
+            <img src="/!/61srjyM7TFL._UF1000,1000_QL80_.jpg" alt="Phone Stand">
+            <p><strong>Phone Stand</strong></p>
+            <p>$12.99</p>
+            <button class="add-btn">Add to Basket</button>
+        </div>
+
+        <div class="product-card" data-name="USB Hub" data-price="17.49">
+            <img src="/!/61FFBZwEvtL.jpg" alt="USB Hub">
+            <p><strong>USB Hub</strong></p>
+            <p>$17.49</p>
+            <button class="add-btn">Add to Basket</button>
+        </div>
+    </section>
+
+    <!-- Basket Modal -->
+    <div class="modal" id="basket-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <h2>Your Basket</h2>
+            <ul id="basket-items"></ul>
+            <p class="total">Total: $<span id="total-price">0.00</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

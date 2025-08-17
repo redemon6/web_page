@@ -1,0 +1,157 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+/* body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+} */
+
+
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      overflow-x: hidden;
+      /* prevents horizontal scroll */
+}
+
+
+/* Navbar */
+.navbar {
+      background-color: #f65e5d;
+      color: white;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.navbar .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+}
+
+.navbar input {
+      width: 40%;
+      padding: 0.5em;
+}
+
+.basket-icon {
+      cursor: pointer;
+      position: relative;
+}
+
+.basket-icon span {
+      background: white;
+      color: #f65e5d;
+      font-weight: bold;
+      border-radius: 50%;
+      padding: 2px 6px;
+      margin-left: 4px;
+      transition: transform 0.2s ease;
+}
+
+.basket-icon span.animate {
+      transform: scale(1.3);
+}
+
+/* Header */
+.header {
+      padding: 2em;
+      text-align: center;
+      background-color: #f2f2f2;
+}
+
+/* Grid Product Layout */
+.product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* align-items: center;
+      justify-content: center; */
+      gap: 1em;
+      padding: 1em;
+}
+
+.product-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1em;
+      text-align: center;
+}
+
+/* .product-card img {
+      /* width: 100%;         
+      /* max-width: 150px;     
+      max-height: 200px;
+      border-radius: 5px;
+} */
+
+.product-card img {
+      width: 50%;
+      /* ensure full width of container */
+      height: auto;
+      /* maintain aspect ratio */
+      max-height: 200px;
+      /* optional */
+      /* object-fit: cover; */
+      /* make it look nice */
+      border-radius: 5px;
+}
+
+
+.add-btn {
+      background-color: #f65e5d;
+      color: white;
+      padding: 0.5em;
+      margin-top: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+}
+
+
+.modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+}
+
+.modal-content {
+      background: white;
+      padding: 2em;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 400px;
+      position: relative;
+}
+
+.modal-content h2 {
+      margin-bottom: 1em;
+}
+
+.close-btn {
+      position: absolute;
+      right: 1em;
+      top: 1em;
+      font-size: 1.5em;
+      cursor: pointer;
+}
+
+#basket-items li {
+      margin-bottom: 0.5em;
+}
+
+.total {
+      font-weight: bold;
+      margin-top: 1em;
+}
