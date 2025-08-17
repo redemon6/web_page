@@ -155,3 +155,16 @@ body {
       font-weight: bold;
       margin-top: 1em;
 }
+
+.remove-btn {
+      background: transparent;
+      color: #f65e5d;
+      border: none;
+      font-size: 1em;
+      margin-left: 10px;
+      cursor: pointer;
+}
+
+.remove-btn:hover {
+      color: #c0392b;
+}
