@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+/* --- Header Styling --- */
+.site-header {
+  background: linear-gradient(90deg, #ff7f50, #ff6347);
+  color: white;
+  padding-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* position: sticky; */
+  top: 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: 40px;
+  /* Adds space between logo and nav */
+}
+
+.header-nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.header-nav a:hover {
+  color: #ffe4e1;
+}
+
+/* --- Filters --- */
+.filters-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.filters-container select,
+.filters-container button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.filters-container button {
+  background-color: #ffffff;
+  color: #ff6347;
+  border: 1px solid #ff6347;
+  transition: 0.3s;
+}
+
+.filters-container button:hover {
+  background-color: #ff6347;
+  color: white;
+}
+
+#backButton {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+}
+
+#backButton.hidden {
+  display: none;
+}
+
+/* --- Products Grid --- */
+#productsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+  align-items: start;
+}
+
+.product-card {
+  background: rgb(255, 247, 218);
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  height: 100%;
+  min-height: 400px;
+  /* Makes all cards same height */
+  position: relative;
+  /* Required for absolute positioning */
+}
+
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+  height: 200px;
+  image-rendering: auto;
+  display: block;
+}
+
+.product-info {
+  margin-top: 10px;
+  flex-grow: 1;
+}
+
+.product-info h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.product-info p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.product-info .price {
+  font-weight: bold;
+  color: #1976d2;
+  margin-top: 5px;
+}
+
+.delete-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #e53935;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* --- Detail View --- */
+#detailView {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+#detailView img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+#detailView h2 {
+  margin-top: 15px;
+  color: #1976d2;
+}
+
+#detailView p {
+  margin: 6px 0;
+  color: #444;
+  font-size: 16px;
+}

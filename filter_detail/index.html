@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZM Products</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <!-- Charming Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <h1 class="logo">🛍️ TrendyZone</h1>
+      <nav class="header-nav">
+        <a href="#">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Filters and Back Button -->
+    <div class="filters-container">
+      <select id="categoryFilter">
+        <option value="">All Categories</option>
+      </select>
+      <select id="colorFilter">
+        <option value="">All Colors</option>
+      </select>
+      <button id="backButton" class="hidden">← Back to Products</button>
+    </div>
+  </header>
+
+  <!-- Product Grid and Detail View -->
+  <main>
+    <div id="productsContainer"></div>
+    <div id="detailView" style="display:none;"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
