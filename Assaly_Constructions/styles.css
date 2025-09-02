@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  padding-top: 200px;
+  /* Add space to avoid content being hidden under the fixed header */
+}
+
+.head_assaly {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  transition: top 0.3s ease-in-out;
+}
+
+.hide-header {
+  top: -250px;
+  /* adjust based on your header height */
+}
+
+.directions {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  transform: translateX(-100px);
+
+}
+
+.directions a {
+  font-size: 23px;
+  text-decoration: none;
+  font-weight: 350;
+  color: black;
+}
+
+.text {
+  background-image: url("/Marble_582065509.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 250px;
+  /* make room for the fixed header */
+}
+
+.text_ {
+  margin: 40px;
+}
+
+
+.josefin-sans-fonttttttt {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-style: normal;
+}
+
+.why {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why_ {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.why__ {
+
+  display: flex;
+  justify-content: space-evenly;
+  gap: 80px;
+}
+
+.why__list {
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+}
+
+.why__list li::before {
+  content: "✔ ";
+  margin-right: 8px;
+}
+
+.bathroom {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bathroom #contact_us {
+  margin-bottom: 54px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+  border: 2px solid black;
+  padding: 23px 60px;
+  transition: all 0.3s ease;
+}
+
+.bathroom #contact_us:hover {
+  color: white;
+  background-color: black;
+}
+
+.bathroom_img {
+  position: relative;
+  width: 100%;
+  height: 230px;
+}
+
+.bathroom_text a {
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 20px;
+  border-bottom: 1px solid black;
+}
+
+.kitchen {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.kitchen #contact_us {
+  margin-bottom: 54px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+  border: 2px solid black;
+  padding: 23px 60px;
+  transition: all 0.3s ease;
+}
+
+.kitchen #contact_us:hover {
+  color: white;
+  background-color: black;
+}
+
+.kitchen_img {
+  position: relative;
+  width: 100%;
+  height: 230px;
+}
+
+.kitchen_text a {
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 20px;
+  border-bottom: 1px solid black;
+}
+
+.outdoor {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.outdoor #contact_us {
+  margin-bottom: 54px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+  border: 2px solid black;
+  padding: 23px 60px;
+  transition: all 0.3s ease;
+}
+
+.outdoor #contact_us:hover {
+  color: white;
+  background-color: black;
+}
+
+.outdoor_img {
+  position: relative;
+  width: 100%;
+  height: 230px;
+}
+
+.outdoor_text a {
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 20px;
+  border-bottom: 1px solid black;
+}
+
+.bottom-section {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 10%;
+  color: white;
+}
+
+.logo-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.contact-info {
+  margin: 0 300px;
+  flex: 3;
+  text-align: left;
+}
+
+.contact-info p {
+  margin: 18px 0;
+}
+
+.contact-info a {
+  color: #f4cc05;
+}
+
+
+
+.social-icon {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.links-section {
+  flex: 2.1;
+  text-align: left;
+}
+
+.links-section p {
+  margin: 18px 0;
+}
+
+.links-section a {
+  color: #f4cc05;
+}
